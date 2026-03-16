@@ -150,10 +150,10 @@
 
   .hero-inner {
     display: grid;
-    grid-template-columns: 1fr 380px;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
     align-items: center;
-    padding: 80px 0 60px;
+    padding: 60px 0 60px;
   }
 
   .hero-tag {
@@ -170,11 +170,11 @@
   .hero-tag::before { content: ''; width: 24px; height: 1px; background: var(--ombre-1); }
 
   .hero-headline {
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(2rem, 3.2vw, 3.2rem);
     font-weight: 800;
-    line-height: .95;
+    line-height: 1.05;
     letter-spacing: -.04em;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
   .hero-headline .grad-word {
@@ -186,11 +186,11 @@
   }
 
   .hero-statement {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--muted-2);
-    max-width: 480px;
+    max-width: 440px;
     line-height: 1.75;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
@@ -233,6 +233,10 @@
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero-card::before {
     content: '';
@@ -243,27 +247,27 @@
   }
 
   .avatar {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     background: var(--grad);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
-  .hero-card h3 { font-size: 1.3rem; margin-bottom: 4px; letter-spacing: -.02em; }
-  .hero-card .role { color: var(--muted); font-size: .9rem; font-family: 'DM Mono', monospace; margin-bottom: 24px; }
+  .hero-card h3 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -.02em; }
+  .hero-card .role { color: var(--muted); font-size: .82rem; font-family: 'DM Mono', monospace; margin-bottom: 20px; }
 
   .info-row {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid var(--border);
   }
   .info-row:last-of-type { border-bottom: none; }
@@ -656,7 +660,7 @@
         <div class="hero-ctas">
           <a href="#projects" class="btn btn-grad">View Case Studies</a>
           <a href="https://github.com/dvhanh-code/data-analyst-portfolio" target="_blank" class="btn btn-outline">GitHub Portfolio</a>
-          <a href="./assets/cv/lebenslauf_AnhDang_DE.pdf" download class="btn btn-outline">Download CV</a>
+          <a href="https://drive.google.com/file/d/1mHtVYWeC6EdhpfV_P-EQwAePzfAFJr8Q/view?usp=sharing" download class="btn btn-outline">Download CV</a>
         </div>
       </div>
 
@@ -697,7 +701,7 @@
         <div class="hero-socials">
           <a href="https://github.com/dvhanh-code" target="_blank" class="social-btn">GitHub</a>
           <a href="https://www.linkedin.com/in/anh-dang-2a433a153/" target="_blank" class="social-btn">LinkedIn</a>
-          <a href="mailto:dangvuhoanganh@gmail.com" class="social-btn">Email</a>
+          <a href="/cdn-cgi/l/email-protection#cfabaea1a8b9baa7a0aea1a8aea1a78fa8a2aea6a3e1aca0a2" class="social-btn">Email</a>
         </div>
       </div>
     </div>
@@ -983,11 +987,11 @@
         I'm <em>not looking to just fill a role.</em> I'm looking for a team that values clarity,
         curiosity, and the kind of analysis that actually changes decisions. If that sounds like your team — let's talk.
       </p>
-      <a href="mailto:dangvuhoanganh@gmail.com" class="contact-email reveal">dangvuhoanganh@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#4f2b2e2128393a27202e21282e21270f28222e2623612c2022" class="contact-email reveal"><span class="__cf_email__" data-cfemail="0266636c6574776a6d636c65636c6a42656f636b6e2c616d6f">[email&#160;protected]</span></a>
       <div class="contact-btns reveal">
         <a href="https://www.linkedin.com/in/anh-dang-2a433a153/" target="_blank" class="btn btn-grad">LinkedIn</a>
         <a href="https://github.com/dvhanh-code" target="_blank" class="btn btn-outline">GitHub</a>
-        <a href="./assets/cv/lebenslauf_AnhDang_DE.pdf" download class="btn btn-outline">Download CV</a>
+        <a href="https://drive.google.com/file/d/1mHtVYWeC6EdhpfV_P-EQwAePzfAFJr8Q/view?usp=sharing" download class="btn btn-outline">Download CV</a>
       </div>
     </div>
   </div>
@@ -999,7 +1003,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ——— CURSOR ———
   const cursor = document.getElementById('cursor');
   const trail = document.getElementById('cursor-trail');
