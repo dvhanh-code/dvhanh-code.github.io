@@ -232,7 +232,7 @@
     padding: 32px;
     backdrop-filter: blur(10px);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -281,7 +281,7 @@
   .info-label { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-family: 'DM Mono', monospace; }
   .info-val { font-size: .9rem; color: var(--text); font-weight: 600; }
 
-  .hero-socials { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+  .hero-socials { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; position: relative; z-index: 2; }
   .social-btn {
     font-size: .78rem;
     font-family: 'DM Mono', monospace;
